@@ -1,7 +1,7 @@
 # Payflow-transaction-contracts
 
 This repo holds the shared **contract classes** (Java records) for PayFlow transactions.
-It is used by **[PayFlow-Inbound-Pipeline](../PayFlow-Inbound-Pipeline)**, which maps incoming transaction data to these models.
+It is used by **[PayFlow-Inbound-Pipeline](https://github.com/kostaskara21/my-package-tracking-system)**, which maps incoming transaction data to these models.
 
 - **Group:** `com.example.payflow`
 - **Artifact:** `payflow-transaction-contracts`
