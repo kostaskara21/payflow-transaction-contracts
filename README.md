@@ -1,4 +1,4 @@
-# payflow-transaction-contracts
+# Payflow-transaction-contracts
 
 This repo holds the shared **contract classes** (Java records) for PayFlow transactions.
 It is used by **[PayFlow-Inbound-Pipeline](../PayFlow-Inbound-Pipeline)**, which maps incoming transaction data to these models.
