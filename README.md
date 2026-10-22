@@ -1,6 +1,6 @@
 # Payflow-transaction-contracts
 
-This repo holds the shared **contract classes** (Java records) for PayFlow transactions.
+This repo holds the shared **contract classes** (plain Java classes) for PayFlow transactions.
 It is used by **[PayFlow-Inbound-Pipeline](https://github.com/kostaskara21/my-package-tracking-system)**, which maps incoming transaction data to these models.
 
 - **Group:** `com.example.payflow`
@@ -10,6 +10,13 @@ It is used by **[PayFlow-Inbound-Pipeline](https://github.com/kostaskara21/my-pa
 - **Package:** `com.example.payflow.contracts`
 
 ## Classes
+
+Every class is a plain Java class (not a record), so MapStruct can map to and from it. Each class has:
+
+- private fields
+- an empty constructor and a constructor that takes every field
+- a getter and setter for every field (`getAmount()` / `setAmount(...)`)
+- `equals`, `hashCode` and `toString`
 
 ### `Transaction`
 The root object. It holds the other contracts.
